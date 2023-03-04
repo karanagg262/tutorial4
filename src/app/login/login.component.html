@@ -1,0 +1,37 @@
+    <mat-grid-list cols="2">
+
+      <mat-grid-tile>
+        <img class="image" mat-card-image src="https://images.rawpixel.com/image_1300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjcwOS0yNy1wLnBuZw.png" alt="Tutorial 3">
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-card class="card">
+          <form [formGroup]= "loginFormGroup" (ngSubmit)="onSubmit()">
+            <mat-card-header>
+              <mat-card-title class="title" > Login </mat-card-title>
+            </mat-card-header>
+      
+            <mat-card-actions>
+              <mat-form-field>
+                <mat-label>E-Mail: </mat-label>
+                <input matInput id="email" type="email" formControlName="email">
+              </mat-form-field>
+            </mat-card-actions>
+      
+            <mat-card-actions>
+              <mat-form-field>
+                <mat-label>Password: </mat-label>
+                <input matInput id="password" type="password" formControlName="password">
+              </mat-form-field>
+            </mat-card-actions>
+      
+            <mat-card-actions>
+              <button mat-raised-button color="primary" [disabled]="!loginFormGroup.valid">Submit</button>
+            </mat-card-actions>
+            
+          </form>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  

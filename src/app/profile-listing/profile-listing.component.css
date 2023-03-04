@@ -1,0 +1,16 @@
+.filter{
+    width: 100%;
+    margin: auto;
+}
+
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+mat-list{
+    height: 100%;
+    width: 100%;
+}
+
+.mat-list-text:last-child + .mat-divider {
+    display: none;
+  }

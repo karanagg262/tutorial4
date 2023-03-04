@@ -1,0 +1,11 @@
+<mat-form-field class="filter">
+  <mat-label>Search by first name or last name</mat-label>
+    <input (keyup)="filterUser($event)" matInput>
+</mat-form-field>
+
+<mat-list>
+    <mat-list-item *ngFor="let dataSource of dataSource" (click)="routeLink(dataSource._id)">
+      <img matListAvatar src={{dataSource.picture}} alt="Tutorial 3"/>
+      {{dataSource.name}}
+    </mat-list-item>
+</mat-list>

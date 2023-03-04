@@ -1,0 +1,26 @@
+.card{
+    text-align: center;
+    max-width:max-content;
+    margin: auto;
+    margin-top: 23%;
+    padding: 50px;
+}
+
+button{
+    margin-left:25%;
+}
+
+.title{
+    margin-left:125%;
+}
+
+mat-grid-list{
+    background-color: antiquewhite;
+}
+
+.image{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 100px;
+}

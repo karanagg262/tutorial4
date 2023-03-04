@@ -1,0 +1,66 @@
+<div class="bgcolor">
+    <mat-icon>notification_important</mat-icon> {{ profileuser.greeting }}<br><br>
+    <mat-card>
+        <mat-card-content>
+            <img matListAvatar src={{profileuser.picture}} alt="Tutorial 3"/><br><br>
+            <h1 class="mat-display-1">{{ profileuser.name }} </h1>
+            <mat-icon> location_on</mat-icon>  {{ profileuser.address }}<br>
+            <mat-icon> phone </mat-icon> {{ profileuser.phone }}&emsp;
+            <mat-icon>mail_outline</mat-icon> {{ profileuser.email }}<br><br><br>
+
+            <mat-divider></mat-divider>
+            <p>{{ profileuser.about }}</p>
+            <mat-divider></mat-divider>
+        
+            <h2 class="mat-display-3">Company: </h2>
+            <p>{{ profileuser.company }}</p>
+            <mat-divider></mat-divider>
+   
+            <h2 class="mat-display-3">Balance: </h2>
+            <p>{{ profileuser.balance }}</p>
+            <mat-divider></mat-divider>
+
+            <h2 class="mat-display-3">Age: </h2>
+            <p>{{ profileuser.age }}</p>
+            <mat-divider></mat-divider>
+
+            <h2 class="mat-display-3">Gender: </h2>
+            <p>{{ profileuser.gender }}</p>
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Eye Color: </h2>
+            <p>{{ profileuser.eyeColor }}</p>
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Favorite Fruit: </h2>
+            <p>{{ profileuser.favoriteFruit }}</p>
+            <mat-divider></mat-divider>
+
+            <h2 class="mat-display-3">Friends: </h2>
+            <div *ngFor="let friend of profileuser.friends">
+                <p>{{ friend.name}}</p>
+            </div>
+           
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Is the User Active? </h2>
+            <p>{{ profileuser.isActive }}</p>
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Latitude: </h2>
+            <p>{{ profileuser.latitude }}</p>
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Longitude: </h2>
+            <p>{{ profileuser.longitude }}</p>
+            <mat-divider></mat-divider>
+    
+            <h2 class="mat-display-3">Registered: </h2>
+            <p class="mat-display-3">{{ profileuser.registered }}</p>
+            <mat-divider></mat-divider>
+            
+            <h2 class="mat-display-3">Tags: </h2>
+            <p class="mat-display-3">{{ profileuser.tags }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
